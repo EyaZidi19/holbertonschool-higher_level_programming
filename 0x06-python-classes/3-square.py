@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """The class that returns the current square area of the square """
-
-
 class Square:
     """Class Square that defines a square.
     Attributes:
@@ -22,6 +20,8 @@ class Square:
     """
     Method to return the area of the square.
     """
+    
     def area(self):
-        return self.__size * self.__size
+        res = self.__size * self.__size
+        return res
     
