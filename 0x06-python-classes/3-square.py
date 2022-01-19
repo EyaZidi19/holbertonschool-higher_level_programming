@@ -1,13 +1,17 @@
 #!/usr/bin/python3
 """The class that returns the current square area of the square """
 class Square:
-    """Class Square that defines a square.
+
+    """
+   
+    Class Square that defines a square.
     Attributes:
         size(int) - instance private: The size of a square
         must be an integer greater than zero.
     Errors:
         TypeError - must be an integer
         ValueError - must be greater than zero
+
     """
 
     def __init__(self, size=0):
@@ -18,7 +22,9 @@ class Square:
         else:
             self.__size = size
     """
-    Method to return the area of the square.
+
+    Method class used  to return the area of the square.
+
     """
     
     def area(self):
