@@ -3,15 +3,17 @@
 class Square:
 
     """
-   
+    
     Class Square that defines a square.
     Attributes:
         size(int) - instance private: The size of a square
         must be an integer greater than zero.
+        def area(self): - Public instance method: returns the 
+        current square area 
     Errors:
         TypeError - must be an integer
         ValueError - must be greater than zero
-
+    
     """
 
     def __init__(self, size=0):
@@ -21,12 +23,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
-    """
-
-    Method class used  to return the area of the square.
-
-    """
-    
+     
     def area(self):
         res = self.__size * self.__size
         return res
