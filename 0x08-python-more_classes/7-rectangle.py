@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Class that defines a rectangle based on the task 7"""
+"""Class that defines a rectangle based on the task 6"""
 
 
 class Rectangle:
