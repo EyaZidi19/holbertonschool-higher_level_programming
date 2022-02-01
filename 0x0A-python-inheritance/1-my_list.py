@@ -10,5 +10,4 @@ class MyList(list):
         public method: print_sorted
     """
     def print_sorted(self):
-        """Use sorted to sort the list"""
         print(sorted(self))
