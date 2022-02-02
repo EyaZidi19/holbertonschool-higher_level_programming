@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""class Student that defines a student by: (based on 9-student.py)"""
+"""
+Student Class that defines a student by: (based on 10-student.py)
+"""
 
 
 class Student:
@@ -21,4 +23,7 @@ class Student:
         for key in attrs:
             if key in self.__dict__:
                 dic[key] = self.__dict__[key]
-        return dic
+
+    def reload_from_json(self, json):
+        for i in json:
+            self.__dict__[i] = json[i]
