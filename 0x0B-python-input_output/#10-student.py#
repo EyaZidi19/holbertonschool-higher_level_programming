@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+"""
+Student Class that defines a student by: (based on 9-student.py)
+"""
+
+
+class Student:
+    """
+    attributes:
+        - first_name
+        - last_name
+        - age
+    """
+    def __init__(se

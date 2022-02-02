@@ -1,19 +1,21 @@
 #!/usr/bin/python3
 """
-    The function adds all arguments to a Python list,
+    The script  adds all arguments to a Python list,
     and then saves them to a file in JSON format
 """
+
+
 import sys
+import os
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
-FILE = "add_item.json"
 
-try:
-    my_list = load_json(FILE)
-except (FileNotFoundError, TypeError):
-    my_list = []
+if os.path.exists('add_item.json'):
+    objs = load_from_json_file('add_item.json')
+else:
+    objs = []
 
-for i in sys.argv[1:]:
-    my_list.append(i)
+for n in range(1, len(sys.argv)):
+    objs.append(sys.argv[n])
 
-save_json(my_list, FILE)
+save_to_json_file(objs, 'add_item.json')
