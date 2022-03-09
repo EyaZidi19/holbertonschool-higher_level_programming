@@ -119,3 +119,13 @@ class Rectangle(Base):
                 if index > 4:
                     break
                 setattr(self, properties[index], arg)  
+                
+   def to_dictionary(self):
+        """Create a dictionary"""
+        return {
+                "id": self.id,
+                "width": self.width,
+                "height": self.height,
+                "y": self.y,
+                "x": self.x,
+                }                
