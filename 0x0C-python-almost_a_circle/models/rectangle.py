@@ -120,7 +120,7 @@ class Rectangle(Base):
                     break
                 setattr(self, properties[index], arg)  
                 
-   def to_dictionary(self):
+    def to_dictionary(self):
         """Create a dictionary"""
         return {
                 "id": self.id,
