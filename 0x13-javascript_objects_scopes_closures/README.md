@@ -1,0 +1,2 @@
+                                    GitHub repository: holbertonschool-higher_level_programming
+                                    Directory: 0x13-javascript_objects_scopes_closures
